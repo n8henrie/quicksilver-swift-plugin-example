@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.qsapp.HomePluginPlugin</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleDisplayName</key>
+	<string>HomePlugin Plugin</string>
+	<key>QSActions</key>
+	<dict>
+		<key>DoSomethingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSHomePluginAction</string>
+			<key>actionSelector</key>
+			<string>performActionOnObject:</string>
+			<key>commandFormat</key>
+			<string>Do something to %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSHomePluginType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>name</key>
+			<string>Do Something</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingUsingAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSHomePluginAction</string>
+			<key>actionSelector</key>
+			<string>performActionOnObject:using:</string>
+			<key>commandFormat</key>
+			<string>Do something to %@ using %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSHomePluginType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>Actions</string>
+			<key>indirectOptional</key>
+			<false/>
+			<key>indirectTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>name</key>
+			<string>Do Something Using…</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>QSDefaultsTemplate</key>
+	<dict>
+		<key>HomePluginEnableFeature</key>
+		<true/>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Nathan Henrie</string>
+		<key>categories</key>
+		<array>
+			<string>TBD</string>
+		</array>
+		<key>description</key>
+		<string>Quicksilver Plugin to interact with HomeKit and Home.app</string>
+		<key>extendedDescription</key>
+		<string>&lt;h1&gt;HomePlugin&lt;/h1&gt;
+&lt;h2&gt;Quicksilver Plugin to interact with HomeKit and Home.app&lt;/h2&gt;
+&lt;p&gt;Documentatoin for HomePlugin&lt;/p&gt;</string>
+		<key>icon</key>
+		<string>QSPlugIn</string>
+	</dict>
+	<key>QSPresetAdditionsTemplate</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetExample</string>
+			<key>enabled</key>
+			<true/>
+			<key>icon</key>
+			<string>QSPlugIn</string>
+			<key>name</key>
+			<string>Example Preset</string>
+			<key>settings</key>
+			<dict>
+				<key>path</key>
+				<string>/path/to/data</string>
+			</dict>
+			<key>source</key>
+			<string>QSHomePluginSource</string>
+		</dict>
+	</array>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSActionProviders</key>
+		<dict>
+			<key>QSHomePluginAction</key>
+			<string>QSHomePluginAction</string>
+		</dict>
+		<key>QSObjectHandlers</key>
+		<dict>
+			<key>QSHomePluginType</key>
+			<string>QSHomePluginSource</string>
+		</dict>
+		<key>QSObjectSources</key>
+		<dict>
+			<key>QSHomePluginSource</key>
+			<string>QSHomePluginSource</string>
+		</dict>
+		<key>QSTypeDefinitions</key>
+		<dict>
+			<key>QSHomePluginType</key>
+			<dict>
+				<key>icon</key>
+				<string>GenericDocumentIcon</string>
+				<key>name</key>
+				<string>HomePlugin Objects</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirementsTemplate</key>
+	<dict>
+		<key>version</key>
+		<string>4012</string>
+	</dict>
+</dict>
+</plist>

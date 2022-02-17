@@ -1,0 +1,5 @@
+# HomePlugin #
+
+## Quicksilver Plugin to interact with HomeKit and Home.app ##
+
+Documentation for HomePlugin
