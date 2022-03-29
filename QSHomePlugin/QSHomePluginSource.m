@@ -23,6 +23,7 @@
 // create and return an array of QSObjects to add to the catalog
 - (NSArray *) objectsForEntry:(NSDictionary *)theEntry
 {
+    NSLog(@"here sourcing stuff");
 	NSMutableArray *objects=[NSMutableArray arrayWithCapacity:1];
 	QSObject *newObject;
 	

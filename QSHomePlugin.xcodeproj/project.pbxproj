@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608539A227D15DA2004EE149 /* QSHomePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608539A127D15DA2004EE149 /* QSHomePlugin.swift */; };
+		609B1FC727F3C4E00048FFEB /* QSHomePluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B1FC327F3C4E00048FFEB /* QSHomePluginSource.m */; };
+		609B1FC827F3C4E00048FFEB /* QSHomePluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B1FC427F3C4E00048FFEB /* QSHomePluginAction.m */; };
 		D434B7751FC8FFC7007AF9C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D434B7741FC8FFC7007AF9C3 /* Cocoa.framework */; };
-		D434B77E1FC8FFC7007AF9C3 /* QSHomePluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D434B77D1FC8FFC7007AF9C3 /* QSHomePluginAction.m */; };
-		D434B7811FC8FFC7007AF9C3 /* QSHomePluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D434B7801FC8FFC7007AF9C3 /* QSHomePluginSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		608539A027D15DA2004EE149 /* QSHomePlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QSHomePlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		608539A127D15DA2004EE149 /* QSHomePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSHomePlugin.swift; sourceTree = "<group>"; };
+		609B1FC327F3C4E00048FFEB /* QSHomePluginSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHomePluginSource.m; sourceTree = "<group>"; };
+		609B1FC427F3C4E00048FFEB /* QSHomePluginAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHomePluginAction.m; sourceTree = "<group>"; };
+		609B1FC527F3C4E00048FFEB /* QSHomePluginAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHomePluginAction.h; sourceTree = "<group>"; };
+		609B1FC627F3C4E00048FFEB /* QSHomePluginSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHomePluginSource.h; sourceTree = "<group>"; };
 		D434B7711FC8FFC7007AF9C3 /* QSHomePlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSHomePlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D434B7741FC8FFC7007AF9C3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		D434B77C1FC8FFC7007AF9C3 /* QSHomePluginAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHomePluginAction.h; sourceTree = "<group>"; };
-		D434B77D1FC8FFC7007AF9C3 /* QSHomePluginAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHomePluginAction.m; sourceTree = "<group>"; };
-		D434B77F1FC8FFC7007AF9C3 /* QSHomePluginSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSHomePluginSource.h; sourceTree = "<group>"; };
-		D434B7801FC8FFC7007AF9C3 /* QSHomePluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSHomePluginSource.m; sourceTree = "<group>"; };
 		D46888911FC903AC00797047 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		D46888921FC903AC00797047 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		D46888931FC903AC00797047 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -69,11 +72,13 @@
 		D434B7761FC8FFC7007AF9C3 /* QSHomePlugin */ = {
 			isa = PBXGroup;
 			children = (
+				609B1FC527F3C4E00048FFEB /* QSHomePluginAction.h */,
+				609B1FC427F3C4E00048FFEB /* QSHomePluginAction.m */,
+				609B1FC627F3C4E00048FFEB /* QSHomePluginSource.h */,
+				609B1FC327F3C4E00048FFEB /* QSHomePluginSource.m */,
 				D4EF80261FC9004F0025F5EA /* Info.plist */,
-				D434B77C1FC8FFC7007AF9C3 /* QSHomePluginAction.h */,
-				D434B77D1FC8FFC7007AF9C3 /* QSHomePluginAction.m */,
-				D434B77F1FC8FFC7007AF9C3 /* QSHomePluginSource.h */,
-				D434B7801FC8FFC7007AF9C3 /* QSHomePluginSource.m */,
+				608539A127D15DA2004EE149 /* QSHomePlugin.swift */,
+				608539A027D15DA2004EE149 /* QSHomePlugin-Bridging-Header.h */,
 			);
 			path = QSHomePlugin;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				TargetAttributes = {
 					D434B7701FC8FFC7007AF9C3 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1320;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -167,7 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -176,8 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D434B77E1FC8FFC7007AF9C3 /* QSHomePluginAction.m in Sources */,
-				D434B7811FC8FFC7007AF9C3 /* QSHomePluginSource.m in Sources */,
+				609B1FC827F3C4E00048FFEB /* QSHomePluginAction.m in Sources */,
+				609B1FC727F3C4E00048FFEB /* QSHomePluginSource.m in Sources */,
+				608539A227D15DA2004EE149 /* QSHomePlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +195,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D46888931FC903AC00797047 /* Debug.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -195,6 +203,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D46888941FC903AC00797047 /* Release.xcconfig */;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -202,11 +211,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D46888961FC903AC00797047 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/QSHomePlugin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QSHomePlugin/QSHomePlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -214,11 +227,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D46888961FC903AC00797047 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/QSHomePlugin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QSHomePlugin/QSHomePlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

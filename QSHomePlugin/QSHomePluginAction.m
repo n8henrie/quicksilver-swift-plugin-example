@@ -7,6 +7,7 @@
 
 #import "QSHomePlugin.h"
 #import "QSHomePluginAction.h"
+#import <QSHomePlugin-Swift.h>
 
 @implementation QSHomePluginAction
 
@@ -15,7 +16,10 @@
 // do something with the selected object(s) from the first pane
 - (QSObject *)performActionOnObject:(QSObject *)dObject
 {
-	return nil;
+    Class providerClass = NSClassFromString(@"QSHomePlugin.QSHomePluginSwiftAction");
+    NSLog(@"Calling some stuff from ObjC: %@", providerClass);
+    QSHomePluginSwiftAction* plugin = [[QSHomePluginSwiftAction alloc]init];
+    return [plugin performSwiftActionFromObjC:dObject];
 }
 
 // do something with the selected object(s) from the first and third panes
@@ -29,7 +33,14 @@
 // return an array of objects that are allowed in the third pane
 - (NSArray *)validIndirectObjectsForAction:(NSString *)action directObject:(QSObject *)dObject
 {
-	return nil;
+    NSString *myString = [[dObject arrayForType:QSHomePluginType ] lastObject];
+    NSMutableArray *newActions = [NSMutableArray arrayWithCapacity:1];
+    if ([myString length] < 10) {
+        [newActions addObject:@"FirstAction"];
+        [newActions addObject:@"SecondAction"];
+    }
+    return newActions;
+//	return nil;
 }
 
 // do some checking on the objects in the first pane

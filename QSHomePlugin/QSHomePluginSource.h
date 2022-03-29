@@ -7,5 +7,6 @@
 
 @interface QSHomePluginSource : QSObjectSource
 {
+
 }
 @end

@@ -17,19 +17,22 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CFBundleDisplayName</key>
-	<string>HomePlugin Plugin</string>
+	<string>Home Plugin</string>
 	<key>QSActions</key>
 	<dict>
-		<key>DoSomethingAction</key>
+		<key>DoSomethingInSwiftAction</key>
 		<dict>
+			<key>alternateAction</key>
+			<string>TurnOff</string>
 			<key>actionClass</key>
-			<string>QSHomePluginAction</string>
+			<string>QSHomePlugin.QSHomePluginSwiftAction</string>
 			<key>actionSelector</key>
-			<string>performActionOnObject:</string>
+			<string>performActionDirectlyInSwift:</string>
 			<key>commandFormat</key>
-			<string>Do something to %@</string>
+			<string>Do something in swift to %@</string>
 			<key>directTypes</key>
 			<array>
+				<string>NSStringPboardType</string>
 				<string>QSHomePluginType</string>
 			</array>
 			<key>displaysResult</key>
@@ -37,26 +40,28 @@
 			<key>icon</key>
 			<string>Actions</string>
 			<key>name</key>
-			<string>Do Something</string>
+			<string>Do Something Directly in Swift</string>
 			<key>validatesObjects</key>
-			<false/>
+			<true/>
 		</dict>
-		<key>DoSomethingUsingAction</key>
+		<key>DoSomethingInSwiftUsingAction</key>
 		<dict>
 			<key>actionClass</key>
-			<string>QSHomePluginAction</string>
+			<string>QSHomePlugin.QSHomePluginSwiftAction</string>
 			<key>actionSelector</key>
-			<string>performActionOnObject:using:</string>
+			<string>performActionDirectlyInSwift:using:</string>
 			<key>commandFormat</key>
 			<string>Do something to %@ using %@</string>
 			<key>directTypes</key>
 			<array>
 				<string>QSHomePluginType</string>
+				<string>QSTextType</string>
+				<string>NSStringPboardType</string>
 			</array>
 			<key>displaysResult</key>
 			<false/>
 			<key>icon</key>
-			<string>Actions</string>
+			<string>com.apple.HomeKit</string>
 			<key>indirectOptional</key>
 			<false/>
 			<key>indirectTypes</key>
@@ -64,7 +69,30 @@
 				<string>NSStringPboardType</string>
 			</array>
 			<key>name</key>
-			<string>Do Something Using…</string>
+			<string>Do Something Directly in Swift Using...</string>
+			<key>validatesObjects</key>
+			<false/>
+		</dict>
+		<key>DoSomethingInSwiftFromObjC</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSHomePluginAction</string>
+			<key>actionSelector</key>
+			<string>performActionOnObject:</string>
+			<key>commandFormat</key>
+			<string>Do something in Swift from ObjC to %@</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSHomePluginType</string>
+				<string>QSTextType</string>
+				<string>NSStringPboardType</string>
+			</array>
+			<key>displaysResult</key>
+			<false/>
+			<key>icon</key>
+			<string>com.apple.HomeKit</string>
+			<key>name</key>
+			<string>Do something in Swift from ObjC</string>
 			<key>validatesObjects</key>
 			<false/>
 		</dict>
@@ -90,8 +118,12 @@
 &lt;p&gt;Documentatoin for HomePlugin&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>QSPlugIn</string>
+		<key>relatedPaths</key>
+		<array>
+			<string>/System/Applications/Home.app</string>
+		</array>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
@@ -108,25 +140,25 @@
 				<string>/path/to/data</string>
 			</dict>
 			<key>source</key>
-			<string>QSHomePluginSource</string>
+			<string>QSHomePlugin.QSHomePluginSwiftSource</string>
 		</dict>
 	</array>
 	<key>QSRegistration</key>
 	<dict>
 		<key>QSActionProviders</key>
 		<dict>
-			<key>QSHomePluginAction</key>
-			<string>QSHomePluginAction</string>
+			<key>QSHomePlugin.QSHomePluginSwiftAction</key>
+			<string>QSHomePlugin.QSHomePluginSwiftAction</string>
 		</dict>
 		<key>QSObjectHandlers</key>
 		<dict>
 			<key>QSHomePluginType</key>
-			<string>QSHomePluginSource</string>
+			<string>QSHomePlugin.QSHomePluginSwiftSource</string>
 		</dict>
 		<key>QSObjectSources</key>
 		<dict>
-			<key>QSHomePluginSource</key>
-			<string>QSHomePluginSource</string>
+			<key>QSHomePlugin.QSHomePluginSwiftSource</key>
+			<string>QSHomePlugin.QSHomePluginSwiftSource</string>
 		</dict>
 		<key>QSTypeDefinitions</key>
 		<dict>
