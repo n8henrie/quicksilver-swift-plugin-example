@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		606D3146289F600F00A76A21 /* QSHomePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHomePlugin.h; sourceTree = "<group>"; };
 		608539A027D15DA2004EE149 /* QSHomePlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QSHomePlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		608539A127D15DA2004EE149 /* QSHomePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSHomePlugin.swift; sourceTree = "<group>"; };
 		609B1FC327F3C4E00048FFEB /* QSHomePluginSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHomePluginSource.m; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		D434B7761FC8FFC7007AF9C3 /* QSHomePlugin */ = {
 			isa = PBXGroup;
 			children = (
+				606D3146289F600F00A76A21 /* QSHomePlugin.h */,
 				609B1FC527F3C4E00048FFEB /* QSHomePluginAction.h */,
 				609B1FC427F3C4E00048FFEB /* QSHomePluginAction.m */,
 				609B1FC627F3C4E00048FFEB /* QSHomePluginSource.h */,
